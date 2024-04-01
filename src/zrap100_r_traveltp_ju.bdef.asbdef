@@ -7,10 +7,11 @@ draft table ZRAP100_DTRAV_JU
 etag master LocalLastChangedAt
 lock master total etag LastChangedAt
 authorization master( global )
+early numbering
 
 {
-  field ( mandatory : create )
-   TravelID;
+//  field ( mandatory : create )
+//   TravelID;
 
   field ( readonly )
    CreatedAt,
@@ -19,7 +20,7 @@ authorization master( global )
    LocalLastChangedAt,
    LocalLastChangedBy;
 
-  field ( readonly : update )
+  field ( readonly )
    TravelID;
 
 
